@@ -24,6 +24,11 @@ public class HomePage {
         return new HoversPage (driver);
     }
 
+    public KeyPressPage clickKeyPresses() {
+    clickLink("Key Presses");
+    return new KeyPressPage (driver);
+    }
+
     //generic method
     private void clickLink (String linkText) {
         driver.findElement(By.linkText(linkText)).click();
